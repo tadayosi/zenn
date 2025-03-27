@@ -3,6 +3,8 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
+    "new:article": "zenn new:article",
+    "preview": "zenn preview",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
