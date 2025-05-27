@@ -3,7 +3,7 @@ title: "Jolokia MCP ServerでJavaアプリをLLMから操作する"
 emoji: "🌶️"
 type: "tech" # tech: 技術記事 / idea: アイデア
 topics: ["ai", "mcp", "java", "jolokia", "jmx"]
-published: false
+published: true
 ---
 
 Javaにはもともと[JMX (Java Management Extensions)](https://docs.oracle.com/en/java/javase/21/docs/api/java.management/javax/management/package-summary.html)という、アプリケーション管理用の内部APIが備わっています。JavaベースのほとんどのサーバーやフレームワークがJMXに基づく管理APIを提供しており、システム監視ツールを使ってそのAPIから各種のモニタリングをしていました。
