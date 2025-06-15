@@ -2,7 +2,7 @@
 title: "Javaはスクリプト言語だ — JBangが変えるJava開発の未来"
 emoji: "☕"
 type: "tech" # tech: 技術記事 / idea: アイデア
-topics: ["jbang", "java", "script", "scripting"]
+topics: ["jbang", "java", "script", "scripting", "jjug"]
 published: true
 ---
 
