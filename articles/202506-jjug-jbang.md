@@ -3,7 +3,7 @@ title: "Javaはスクリプト言語だ — JBangが変えるJava開発の未来
 emoji: "☕"
 type: "tech" # tech: 技術記事 / idea: アイデア
 topics: ["jbang", "java", "script", "scripting"]
-published: false
+published: true
 ---
 
 [JJUG CCC 2025 Spring](https://ccc2025spring.java-users.jp/)にて「[Javaはスクリプト言語だ — JBangが変えるJava開発の未来](https://sessionize.com/api/v2/s2ztutnz/view/Sessions#sz-session-872648)」という発表をさせていただきました。
@@ -266,6 +266,7 @@ jbang edit --sandbox greet.java
 $ jbang edit --sandbox --no-open greet.java
 [jbang] Creating sandbox for script editing greet.java
 /Users/tadayosi/.jbang/cache/projects/greet.java_jbang_6df7e8896068e72b39f45fca68fbb4c219e412c50af646bdfbfaa1472c26e429/greet
+
 $ idea `jbang edit --sandbox --no-open greet.java`
 ```
 
@@ -381,6 +382,17 @@ jbang init --template=cli cli.java
 
 https://github.com/tadayosi/jjug2025-jbang/blob/main/5-cli/cli.java
 
+実行すると、すでに最低限のオプションがサポートされているのがわかります。
+
+```console
+$ ./cli.java -h
+Usage: cli [-hV] <greeting>
+cli made with jbang
+      <greeting>   The greeting to print
+  -h, --help       Show this help message and exit.
+  -V, --version    Print version information and exit.
+```
+
 ### picocli
 
 JBangのCLIテンプレートで使われているのは、picocliというCLIフレームワークです。
@@ -395,7 +407,7 @@ JBang + picocliを使って、実際にCLIを提供しているJavaのフレー�
 - [Hawtio](https://hawt.io/docs/get-started.html) — JMXベースのWeb管理コンソール
 - [Citrus](https://citrusframework.org/samples/jbang/) — BDDインテグレーションテストフレームワーク
 
-### カタログ
+## カタログ
 
 さらにJBangにはカタログという、スクリプト配布のための仕組みが備わっています。先ほどのCLI開発とこのカタログを組み合わせることで、JBangによるエコシステム構築の土台が出来上がります。
 
